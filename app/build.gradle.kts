@@ -56,6 +56,8 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     // unit test
     implementation("androidx.test.ext:junit-ktx:1.1.5")
+    implementation("com.google.android.material:material:1.8.0")
+    implementation("androidx.annotation:annotation:1.6.0")
     testImplementation("org.testng:testng:6.9.6")
     //lifecycle
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.3.0")
@@ -80,6 +82,8 @@ dependencies {
     implementation("com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2")
     //constraintlayout
     implementation("androidx.constraintlayout:constraintlayout:2.2.0-alpha07")
-
-
+    //Navigation
+    val nav_version = "2.5.3"
+    implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
+    implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
 }
