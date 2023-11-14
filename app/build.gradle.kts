@@ -54,7 +54,9 @@ dependencies {
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
-
+    // unit test
+    implementation("androidx.test.ext:junit-ktx:1.1.5")
+    testImplementation("org.testng:testng:6.9.6")
     //lifecycle
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.3.0")
     implementation("androidx.lifecycle:lifecycle-common-java8:2.2.0")
@@ -67,10 +69,17 @@ dependencies {
     //navigation
     implementation("androidx.navigation:navigation-fragment-ktx:2.3.5")
     implementation("androidx.navigation:navigation-ui-ktx:2.3.5")
-    //retrofit
+    //retrofit+coroutines
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
-    implementation("androidx.test.ext:junit-ktx:1.1.5")
-    testImplementation("org.testng:testng:6.9.6")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2")
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.0.0")
+    implementation("com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2")
+    //constraintlayout
+    implementation("androidx.constraintlayout:constraintlayout:2.2.0-alpha07")
+
 
 }

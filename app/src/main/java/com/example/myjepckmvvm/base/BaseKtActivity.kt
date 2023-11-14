@@ -26,10 +26,9 @@ open abstract class BaseKtActivity<VB : ViewBinding, VM : BaseViewModel> :
         initData()
     }
 
-    abstract fun initData()
-
     abstract fun initView()
 
+    abstract fun initData()
 
     private fun getViewBinding(): VB {
         var superclass: Type = this.javaClass.genericSuperclass

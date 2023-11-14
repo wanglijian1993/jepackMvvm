@@ -1,10 +1,24 @@
 package com.example.myjepckmvvm
 
-import android.annotation.SuppressLint
 import android.os.Bundle
-import androidx.core.app.ComponentActivity
+import com.example.myjepckmvvm.base.BaseKtActivity
+import com.example.myjepckmvvm.databinding.ActivityMainBinding
+import com.example.myjepckmvvm.mvvm.MainViewModel
 
-@SuppressLint("RestrictedApi")
-class MainActivity : ComponentActivity() {
+class MainActivity : BaseKtActivity<ActivityMainBinding, MainViewModel>() {
+
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+    }
+
+
+    override fun initView() {
+    }
+
+    override fun initData() {
+
+    }
 
 }
