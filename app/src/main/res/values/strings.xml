@@ -4,4 +4,8 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="page_title">page title\n</string>
+    <string name="lovely">爱心</string>
+    <string name="safe">安全\n</string>
+    <string name="play_record">回放记录\n</string>
 </resources>

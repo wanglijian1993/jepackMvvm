@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/lovely"
+        android:icon="@mipmap/ic_lovely"
+        android:title="@string/lovely"
+        android:contentDescription="@string/lovely"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/safe"
+        android:icon="@mipmap/ic_safe"
+        android:title="@string/safe"
+        android:contentDescription="@string/safe"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/record"
+        android:icon="@mipmap/ic_play_record"
+        android:title="@string/play_record"
+        android:contentDescription="@string/play_record"
+        app:showAsAction="never" />
+
+</menu>
