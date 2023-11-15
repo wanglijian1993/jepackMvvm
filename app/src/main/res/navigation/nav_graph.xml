@@ -3,25 +3,28 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/page1Fragment">
+    app:startDestination="@+id/page_fragment_1">
 
 
     <fragment
-        android:id="@+id/page1Fragment"
+        android:id="@+id/page_fragment_1"
         android:name="com.example.myjepckmvvm.navigation.fragments.Page1Fragment"
         android:label="Page1Fragment"
         tools:layout="@layout/fragment_page1">
         <action
             android:id="@+id/action_page1_to_page2"
-            app:destination="@id/page2Fragment" />
+            app:destination="@+id/page_fragment_2" />
     </fragment>
     <fragment
-        android:id="@+id/page2Fragment"
+        android:id="@+id/page_fragment_2"
         android:name="com.example.myjepckmvvm.navigation.fragments.Page2Fragment"
         android:label="Page2Fragment"
         tools:layout="@layout/fragment_page2">
         <action
             android:id="@+id/action_page2_to_page1"
-            app:destination="@id/page1Fragment" />
+            app:destination="@id/page_fragment_1" />
+        <argument
+            android:name="userName"
+            android:defaultValue="name"></argument>
     </fragment>
 </navigation>
